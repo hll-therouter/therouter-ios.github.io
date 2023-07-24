@@ -7,48 +7,21 @@
     <ul class="nav nav-pills">
       
       <li class="nav-item">
-        {% if page.url == "/" %}
-          <a href="/" class="nav-link active header-color" aria-current="page">首页</a>
-        {% else %}
-          <a href="/" class="nav-link header-color" aria-current="page">首页</a>
-        {% endif %} 
+        <a href="/" class="nav-link header-color" aria-current="page">首页</a>
       </li>
       <li class="nav-item">
-        {% if page.url contains "/doc" %}
-          {% if page.url contains "/2022/08/24" %}
-            <a href="/doc" class="nav-link header-color">Android</a>
-          {% else %}
-            <a href="/doc" class="nav-link active header-color">Android</a>
-          {% endif %} 
-        {% else %}
-          <a href="/doc" class="nav-link header-color">Android</a>
-        {% endif %} 
+        <a href="https://therouter.cn" class="nav-link header-color">Android</a>
       </li>
       <li class="nav-item">
-          <a href="https://ios.therouter.cn" class="nav-link header-color">iOS</a>
+        <a href="https://therouter.cn/ios" class="nav-link header-color">iOS</a>
       </li>
       <li class="nav-item">
-        {% if page.url contains "/docs/2022/08/24/01" %}
-          <a href="/docs/2022/08/24/01" class="nav-link active header-color">发帖</a>
-        {% else %}
-          <a href="/docs/2022/08/24/01" class="nav-link header-color">社区</a>
-        {% endif %} 
+        <a href="https://therouter.cn/docs/2022/08/24/01" class="nav-link header-color">社区</a>
       </li>
       <li class="nav-item">
-        {% if page.url contains "/api" %}
-          <a href="/api/1.1.2" class="nav-link active header-color">API文档</a>
-        {% else %}
-          <a href="/api/1.1.2" class="nav-link header-color">API文档</a>
-        {% endif %} 
+        <a href="https://therouter.cn/about" class="nav-link header-color">关于</a>
       </li>
-      <li class="nav-item">
-        {% if page.url == "/about" %}
-          <a href="/about" class="nav-link active header-color">关于</a>
-        {% else %}
-          <a href="/about" class="nav-link header-color">关于</a>
-        {% endif %} 
-      </li>
-      <li class="nav-item"><a href="https://github.com/HuolalaTech/hll-wp-therouter-android" class="nav-link header-color">GitHub</a></li>
+      <li class="nav-item"><a href="https://github.com/HuolalaTech/hll-wp-therouter-ios" class="nav-link header-color">GitHub</a></li>
     </ul>
   </header>
 </div>
