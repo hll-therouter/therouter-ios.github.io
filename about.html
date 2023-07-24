@@ -1,0 +1,181 @@
+---
+layout: default
+permalink: /about
+---
+
+<!-- Main Container -->
+
+<div class="row container-kamn">
+  <img src="https://oimg.huolala.cn/cms/2019/07/11/19071118032283505825.jpeg" class="blog-post" alt="Feature-img" align="right" width="100%"> 
+</div>
+
+<div id="banners"></div>
+<div class="container">   
+  <div class="row">
+    <div class="side-left col-sm-4 col-md-4">
+      <h3 class="lead"> TheRouter 的四大能力 </h3><hr>
+      <p>Navigator：</p>
+      <ul>
+      <li>支持 Activity 和 Fragment </li>
+      <li>支持 Path 与页面多对一关系或一对一关系，可用于解决多端path统一问题</li>
+      <li>页面 Path 支持正则表达式声明</li>
+      <li>支持 json 格式路由表导出</li>
+      <li>支持动态下发 json 路由表，降级任意页面为H5</li>
+      <li>支持任意 object 跨模块传递（无需序列化，且能保证对象类型）</li>
+      <li>支持页面跳转拦截处理</li>
+      <li>支持自定义页面参数解析方式（例如将 json 解析为对象）</li>
+      <li>支持使用路由跳转到第三方 SDK 中的 Activity ( Fragment )</li>
+      </ul>
+
+      <p>ServiceProvider：</p>
+      <ul>
+      <li>支持跨模块依赖注入</li>
+      <li>支持自定义注入项的创建规则，依赖注入可自定义参数</li>
+      <li>支持自定义服务拦截，单模块 mock 调试</li>
+      <li>支持注入对象缓存，多次注入 只会 new 一次对象</li>
+      </ul>
+
+      <p>FlowTaskExecutor：</p>
+      <ul>
+      <li>支持单模块独立初始化</li>
+      <li>支持懒加载初始化</li>
+      <li>独立初始化允许多任务依赖(参考 Gradle Task )</li>
+      <li>支持编译期循环引用检测</li>
+      <li>支持自定义业务初始化时机，可以用于解决隐私合规问题</li>
+      </ul>
+
+      <p>ActionManager：</p>
+      <ul>
+      <li>支持全局回调配置</li>
+      <li>支持优先级响应与中断响应</li>
+      <li>支持记录调用路径，解决调试期观察者模式无法追踪 Observable 的问题 </li>
+      </ul>
+
+    </div>
+    <div class="col-sm-8 col-md-8">
+        <h3> 关于 TheRouter </h3><hr>
+        <p>TheRouter 是一个 Kotlin 编写，由货拉拉移动技术团队开发，用于 Android 模块化开发的一整套解决方案框架。
+        </p>
+        <h4 class="lead"id="anchor1"> 为什么要使用 TheRouter </h4><hr>
+        <p>
+          路由是现如今移动端开发中必不可少的功能，尤其是企业级APP，可以用于将Intent页面跳转的强依赖关系解耦，同时减少跨团队开发的互相依赖问题。
+        </p>
+        <p>对于大型 APP 开发，基本都会选用模块化(或组件化)方式开发，对于模块间解耦要求更高。 </p>
+        <p>TheRouter 是一整套完全面向模块化开发的解决方案，不仅能支持常规的模块依赖解耦、页面跳转，同时提供了模块化过程中常见问题的解决办法。例如：完美解决了模块化开发后由于组件内无法获取 Application 生命周期与业务流程，造成每次初始化与关联依赖调用都需要跨模块修改代码的问题。</p>
+
+<br>
+        <h4>与其他路由对比</h4>
+        
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>功能</th>
+              <th>TheRouter</th>
+              <th>ARouter</th>
+              <th>WMRouter</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fragment路由</td>
+              <td>✔️</td>
+              <td>✔️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <td>依赖注入</td>
+              <td>✔️</td>
+              <td>✔️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <td>加载路由表</td>
+              <td>无运行时扫描<br>无反射</td>
+              <td>运行时扫描dex(新版本改为反射)<br>反射实例类<br>性能损耗大</td>
+              <td>运行时读文件<br>反射实例类<br>性能损耗中</td>
+            </tr>
+            <tr>
+              <td>注解正则表达式</td>
+              <td>✔️</td>
+              <td>✖️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <td>Activity指定拦截器</td>
+              <td>✔️（四大拦截器可根据业务定制）</td>
+              <td>✖️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <td>导出路由文档</td>
+              <td>✔️（路由文档支持添加注释描述）</td>
+              <td>✔️</td>
+              <td>✖️</td>
+            </tr>
+            <tr>
+              <td>动态注册路由信息</td>
+              <td>✔️</td>
+              <td>✔️</td>
+              <td>✖️</td>
+            </tr>
+            <tr>
+              <td>支持 APT/KAPT 增量编译</td>
+              <td>✔️</td>
+              <td>✔️（开启文档生成则无法增量编译）</td>
+              <td>✖️</td>
+            </tr>
+            <tr>
+              <td>支持 KSP 编译</td>
+              <td>✔️</td>
+              <td>✖️</td>
+              <td>✖️</td>
+            </tr>
+            <tr>
+              <td>支持 AGP8</td>
+              <td>✔️</td>
+              <td>Gradle 7.3 以后无法使用</td>
+              <td>Gradle 7.3 以后无法使用</td>
+            </tr>
+            <tr>
+              <td>plugin支持增量编译</td>
+              <td>✔️</td>
+              <td>✖️</td>
+              <td>✖️</td>
+            </tr>
+            <tr>
+              <td>多 Path 对应同一页面（低成本实现双端path统一）</td>
+              <td>✔️</td>
+              <td>✖️</td>
+              <td>✖️</td>
+            </tr>
+            <tr>
+              <td>远端路由表下发</td>
+              <td>✔️</td>
+              <td>✖️</td>
+              <td>✖️</td>
+            </tr>
+            <tr>
+              <td>支持单模块独立初始化</td>
+              <td>✔️</td>
+              <td>✖️</td>
+              <td>✖️</td>
+            </tr>
+            <tr>
+              <td>支持使用路由打开第三方 SDK 页面</td>
+              <td>✔️</td>
+              <td>✖️</td>
+              <td>✖️</td>
+            </tr>
+            <tr>
+              <td>对热修复支持（例如tinker）</td>
+              <td>✔️(未改变的代码多次构建无变动)</td>
+              <td>✖️(多次构建apt产物会发生变化，生成无意义补丁)</td>
+              <td>✖️(多次构建apt产物会发生变化，生成无意义补丁)</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>  
+  </div>    
+</div>  
+
+<!--End Main Container -->

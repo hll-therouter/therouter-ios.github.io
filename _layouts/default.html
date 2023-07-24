@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+
+  {% include head.html %}
+  {% include header.html %}
+  {% include script.html %}
+
+  <body>
+  	{% if page.title %}
+  		<h2 class="blog-title" align="center">{{ page.title }}</h2>
+  	{% endif %}
+    <br>
+    {{ content }}
+  </body>
+
+  {% include footer.html %}
+</html>
