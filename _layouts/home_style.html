@@ -9,7 +9,7 @@
     <div style="position: relative; width: 100%;">
         <img src="{{ site.url }}/assets/img/logo/huolala.jpg" class="blur" width="100%">
         <span class="home-title">移动端模块化解决方案</span>
-        <span class="home-text">TheRouter 是一个 OC 编写，同时可以完美支持 Swift 使用的移动端路由框架，同时具备 Android 版本和 iOS 版本。</span>
+        <span class="home-text">TheRouter是货拉拉打造的一款同时支持 Android 及 iOS 的轻量级路由中间件，在 iOS 端吸取了其他其他语言的特性，支持注解功能，极大提升了路由在 iOS 端的使用体感。摒弃了传统 ioser 的 target-action 或 protocol 理念，向更广的后台或 Android 应用对齐。</span>
         <a href="https://therouter.cn/docs/2022/11/23/01">
             <button type="button" class="btn btn-info button-color home-button-android">Android</button>
         </a>
@@ -35,8 +35,8 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <div class="services-group wow animated fadeInLeft" data-wow-offset="40">
                         <p class="services-icon"><i class="bi bi-bezier home-bi"></i></p>
-                        <h4 class="services-title">页面跳转能力<br>Navigator</h4>
-                        <p class="services-body">支持正则Path，多对一页面关系，动态下发路由表。支持纯原生、H5 Hybrid、Flutter、RN、Weex等混合开发框架。<br><br></p>
+                        <h4 class="services-title">页面跳转能力</h4>
+                        <p class="services-body">支持常规 VC 或 Storyboard 的 push/present 跳转能力，支持添加重定向、拦截器、远程路由表下发等等。<br><br></p>
                         <p class="services-more"><a href="/docs/2022/08/28/01">查阅详细文档</a></p>
                     </div>
                 </div>
@@ -44,8 +44,8 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <div class="services-group wow animated zoomIn" data-wow-offset="40">
                         <p class="services-icon"><i class="bi bi-bezier2 home-bi"></i></p>
-                        <h4 class="services-title">依赖注入能力<br>ServiceProvider</h4>
-                        <p class="services-body">支持跨模块依赖注入，支持自定义注入项的创建规则，依赖注入可自定义参数。支持自定义服务拦截，单模块 mock 调试。</p>
+                        <h4 class="services-title">自动注册能力</h4>
+                        <p class="services-body">实现类似Java注解功能，在vc类或任意方法上标注即可完成路由注册。</p>
                         <p class="services-more"><a href="/docs/2022/08/27/01">查阅详细文档</a></p>
                     </div>
                 </div>
@@ -53,44 +53,13 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <div class="services-group wow animated fadeInRight" data-wow-offset="40">
                         <p class="services-icon"><i class="bi bi-diagram-3 home-bi"></i></p>
-                        <h4 class="services-title">业务节点订阅<br>FlowTaskExecutor</h4>
-                        <p class="services-body">支持独立模块自动初始化，初始化允许跨模块多任务依赖，支持编译期循环引用检测，支持自定义业务初始化时机，可以用于解决隐私合规问题。</p>
-                        <p class="services-more"><a href="/docs/2022/08/26/01">查阅详细文档</a></p>
+                        <h4 class="services-title">硬编码消除</h4>
+                        <p class="services-body">内置脚本会自动将注册的path转为静态字符串常量供业务使用。</p>
+                        <p class="services-more"><a href="/docs/2022/08/25/01">查阅详细文档</a></p>
                     </div>        
                 </div>
             </div>
             <!-- End Serivces Row 1 -->
-      
-            <!-- Begin Services Row 2 -->
-            <div class="row services-row services-row-tail services-row-2">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="services-group wow animated zoomIn" data-wow-offset="40">
-                        <p class="services-icon"><i class="bi bi-yelp home-bi"></i></p>
-                        <h4 class="services-title">动态化能力<br>ActionManager</h4>
-                        <p class="services-body">支持远程代码执行，支持全局回调配置，支持优先级响应与中断响应，支持记录调用路径，解决调试期观察者模式无法追踪Observable的问题。</p>
-                        <p class="services-more"><a href="/docs/2022/08/25/01">查阅详细文档</a></p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="services-group wow animated fadeInLeft" data-wow-offset="40">
-                        <p class="services-icon"><i class="bi bi-columns-gap home-bi"></i></span></p>
-                        <h4 class="services-title">出色的AS辅助工具<br><br></h4>
-                        <p class="services-body">一个用于自动跳转的高效辅助插件，可以直接从路由的声明处查看到哪些地方跳转到本路由，再也不用怕路由字符串满天飞了。</p>
-                        <p class="services-more"><a href="/docs/2022/09/29/01">查阅详细文档</a></p>
-                    </div>
-                </div>
-        
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                        <p class="services-icon"><i class="bi bi-signpost-split home-bi"></i></p>
-                        <h4 class="services-title">从其他路由一键迁移<br><br></h4>
-                        <p class="services-body">TheRouter提供了图形化界面的迁移工具，可以一键从其他路由迁移到TheRouter，目前仅支持ARouter，其他路由框架迁移也在开发中。</p>
-                        <p class="services-more"><a href="/docs/2022/09/05/01">查阅详细文档</a></p>
-                    </div>
-                </div>
-            </div>
-            <!-- End Serivces Row 2 -->
     
         </div>      
     </section>
