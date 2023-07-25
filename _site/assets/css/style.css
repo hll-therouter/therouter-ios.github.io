@@ -152,38 +152,32 @@ address {
     margin-top: 28px;
     }
 
-.home-button-android{
-    position: absolute; 
-    top: 73%; 
-    left: 15%; 
-    color: white;
-  }
-.home-button-ios{
-    position: absolute; 
-    top: 73%; 
-    left: 22%; 
-    color: white;
-  }
+.home-button-start{
+  position: absolute;
+  top: 73%;
+  left: 17%;
+  color: white;
+}
 .home-button-github{
-  position: absolute; 
-  top: 73%; 
-  left: 30%; 
+  position: absolute;
+  top: 73%;
+  left: 27%;
   color: white;
 }
 .home-text{
-  position: absolute; 
-  top: 31%; 
-  left: 12%; 
-  color: white; 
-  max-width: 30%; 
-  font-size: 1.2vw; 
+  position: absolute;
+  top: 38%;
+  left: 12%;
+  color: white;
+  max-width: 30%;
+  font-size: 1.2vw;
   line-height:1.8vw
 }
 .home-title{
-  position: absolute; 
-  top: 13%; 
-  left: 17%; 
-  color: white; 
+  position: absolute;
+  top: 13%;
+  left: 17%;
+  color: white;
   font-size: 2.2vw;
 }
 
@@ -191,68 +185,56 @@ address {
   width: 50%;
 }
 
-@media (min-width: 50px) and (max-width: 988px) { 
- 
+@media (min-width: 50px) and (max-width: 988px) {
+
  address {
     margin-top: 28px;
     margin-left: 21px;
     }
-  .home-button-android{
-    position: absolute; 
-    top: 53%; 
-    left: 10%; 
-    color: white;
-  }
-  .home-button-ios{
-    position: absolute; 
-    top: 53%; 
-    left: 43%; 
+  .home-button-start{
+    position: absolute;
+    top: 53%;
+    left: 17%;
     color: white;
   }
 
   .home-button-github{
-    position: absolute; 
-    top: 53%; 
-    left: 67%; 
+    position: absolute;
+    top: 53%;
+    left: 57%;
     color: white;
   }
   .home-text{
     display: none;
   }
   .home-title{
-    position: absolute; 
-    top: 13%; 
-    left: 17%; 
-    color: white; 
+    position: absolute;
+    top: 13%;
+    left: 17%;
+    color: white;
     font-size: 4.5vw;
   }
   .blog-img{
     width: 90%;
   }
 }
-@media (min-width: 988px) and (max-width: 1200px) { 
- 
+@media (min-width: 988px) and (max-width: 1200px) {
+
  address {
     margin-top: 28px;
     margin-left: -58px;
     }
 
-  .home-button-android{
-    position: absolute; 
-    top: 73%; 
-    left: 13%; 
-    color: white;
-  }
-  .home-button-ios{
-    position: absolute; 
-    top: 73%; 
-    left: 33%; 
+  .home-button-start{
+    position: absolute;
+    top: 73%;
+    left: 17%;
     color: white;
   }
   .home-button-github{
-    position: absolute; 
-    top: 73%; 
-    left: 50%; 
+    position: absolute;
+    top: 73%;
+    left: 47%;
     color: white;
   }
   .home-text{
